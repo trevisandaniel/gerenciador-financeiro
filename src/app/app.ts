@@ -4,7 +4,7 @@ import { Layout } from './core/layout/layout';
 
 @Component({
   selector: 'app-root',
-  imports: [Layout, ], //RouterOutlet por algum motivo não esta funcionando aqui
+  imports: [Layout, RouterOutlet ], //RouterOutlet por algum motivo não esta funcionando aqui
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
