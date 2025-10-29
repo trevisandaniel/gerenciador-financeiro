@@ -1,17 +1,17 @@
 <app-balance-card class="card"
     [type]="'income'" 
     [label]="'Entradas'" 
-    [value]="100"
+    [value]="totalIncome()"
 ></app-balance-card>
 
 <app-balance-card class="card"
     [type]="'balance'" 
     [label]="'Saldo'" 
-    [value]="100"
+    [value]="balance()"
 ></app-balance-card>
 
 <app-balance-card class="card"
     [type]="'outcome'" 
     [label]="'Saídas'" 
-    [value]="200"
+    [value]="totalOutcome()"
 ></app-balance-card>
