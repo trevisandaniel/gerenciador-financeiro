@@ -13,5 +13,6 @@ export class Home {
     {value: 200, type: 'outcome'},
     {value: 300, type: 'income'},
     {value: 100, type: 'outcome'},  
+    {value: 500, type: 'outcome'}
   ])
 }
