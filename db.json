@@ -1,0 +1,34 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "title": "Teste",
+            "value": 500,
+            "type": "INCOME"
+        },
+        {
+            "id": 2,
+            "title": "Teste",
+            "value": 200,
+            "type": "OUTCOME"
+        },
+        {
+            "id": 3,
+            "title": "Teste",
+            "value": 300,
+            "type": "INCOME"
+        },
+        {
+            "id": 4,
+            "title": "Teste",
+            "value": 100,
+            "type": "OUTCOME"
+        },
+        {
+            "id": 5,
+            "title": "Teste",
+            "value": 500,
+            "type": "OUTCOME"
+        }
+    ]
+}
