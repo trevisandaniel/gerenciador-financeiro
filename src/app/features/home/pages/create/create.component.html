@@ -1,16 +1,29 @@
 <form [formGroup]="form">
-    <mat-form-field>
+    <mat-form-field class="w-100 mb-24">
         <mat-label>Título</mat-label>
-        <input 
-            matInput 
-            placeholder="Digite o título da transação." 
-            formControlName="title"  
-            required 
-        />
-        @if (form.controls.title.invalid) {
+        <input matInput placeholder="Digite o título da transação." formControlName="title" required />
+        @if (form.controls.title.hasError('required') && form.controls.title.touched) {
         <mat-error>Campo obrigatório!</mat-error>
         }
     </mat-form-field>
 
-    {{form.controls.title.value}}
+
+    <mat-form-field class="w-100 mb-24">
+        <mat-label>Valor</mat-label>
+        <input matInput type="number" placeholder="Digite o valor da transação." formControlName="value" required />
+        <span matTextPrefix>R$</span>
+        @if (form.controls.title.hasError('required') && form.controls.title.touched) {
+        <mat-error>Campo obrigatório!</mat-error>
+        }
+    </mat-form-field>
+
+    <div class="submit-container">
+        <button 
+            type="submit" 
+            mat-flat-button="filled"
+            [disabled]="form.invalid"
+        >
+            Salvar
+        </button>
+    </div>
 </form>
