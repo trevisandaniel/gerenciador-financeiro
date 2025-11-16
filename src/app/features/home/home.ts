@@ -4,10 +4,15 @@ import { TransactionsService } from '../../shared/transaction/services/transacti
 import { Balance } from "./components/balance/balance";
 import { NoTransactions } from "./components/no-transactions/no-transactions";
 import { TransactionItem } from "./components/transaction-item/transaction-item";
+import { MatAnchor, MatButtonModule } from "@angular/material/button";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [Balance, TransactionItem, NoTransactions],
+  imports: [
+    Balance, TransactionItem, 
+    NoTransactions, MatAnchor, 
+    MatButtonModule, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
