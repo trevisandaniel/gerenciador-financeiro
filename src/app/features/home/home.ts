@@ -1,6 +1,6 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { Transaction } from '../../shared/transaction/interfaces/transaction';
-import { TransactionsService } from '../../shared/transaction/services/transactions';
+import { TransactionsService } from '../../shared/transaction/services/transactions.service';
 import { Balance } from "./components/balance/balance";
 import { NoTransactions } from "./components/no-transactions/no-transactions";
 import { TransactionItem } from "./components/transaction-item/transaction-item";
